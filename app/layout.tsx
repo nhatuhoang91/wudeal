@@ -16,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='font-'>
-      <body className = 'bg-background text-black selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white'>
+      <body className = 'bg-background text-black selection:bg-teal-300 dark:bg-neutral-900 \
+      dark:text-white dark:selection:bg-pink-500 dark:selection:text-white'>
         <div className=''>
           <SiteHeader/>
           {children}
