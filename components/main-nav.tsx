@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-
+import { cn } from "@/lib/utils"
 export const MainNav = () => {
     const pathname = usePathname()
     return(
@@ -10,7 +10,7 @@ export const MainNav = () => {
                 <span className="font-bold">wuDeal</span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
-                <Link href=/>
+                <Link href='/'>
                 </Link>
             </nav>
         </div>
