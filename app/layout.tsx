@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { fontInter } from '@/lib/fonts'
 import './globals.css'
 
-import {SiteHeader} from '@/components/SiteHeader'
+import {SiteHeader} from '@/components/site-header'
 
 export const metadata: Metadata = {
   title: 'Create Next App',

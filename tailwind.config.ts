@@ -7,12 +7,19 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors:{
-      'background' : '#fafafa'
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
     },
     extend: {
       fontFamily:{
         inter : ['var(--font-inter)']
+      },
+      colors:{
+        'background' : '#fafafa'
       }
     },
   },
