@@ -19,7 +19,8 @@ const config: Config = {
         inter : ['var(--font-inter)']
       },
       colors:{
-        'background' : '#fafafa'
+        'background' : '#fafafa',
+        'foreground' : '#171717'
       }
     },
   },
