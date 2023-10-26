@@ -1,13 +1,14 @@
 'use client'
 
 import Link, {LinkProps } from 'next/link'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import * as React from 'react'
 import {Menu} from 'lucide-react'
 
 import { cn } from '@/lib/utils'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Button } from './ui/button'
+import { ScrollArea } from './ui/scroll-area'
 
 
 export const MobileNav = () => {
@@ -30,6 +31,16 @@ export const MobileNav = () => {
                     onOpenChange={setOpen}>
                     <span className='font-bold'>wuDeal</span>
                 </MobileLink>
+                <ScrollArea className='my-4 h-[calc(100vh-8rem)] pb-10 pl-6'>
+                    <MobileLink href='/'
+                        onOpenChange={setOpen}>
+                            <span>Dashboard</span>
+                    </MobileLink>
+                    <MobileLink href='/accounts'
+                        onOpenChange={setOpen}>
+                            <span>Accounts</span>
+                    </MobileLink>
+                </ScrollArea>
             </SheetContent>
         </Sheet>
     )
