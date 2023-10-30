@@ -20,7 +20,8 @@ const config: Config = {
       },
       colors:{
         'background' : '#fafafa',
-        'foreground' : '#171717'
+        'foreground' : '#171717',
+        'activated' : '#e5e5e5',
       }
     },
   },
