@@ -14,6 +14,20 @@ export enum CategoryGroup {
     SPORTING_GOODS = 'Sporting Goods',
     TECH_AND_ELECTRONICS = 'Tech & Electronics'
 }
+export const categoryList : string[] = ['Auto',
+'Babies & Kids',
+'Bags & Luggage',
+'Clothing & Accessories',
+'Computers',
+'Grocery',
+'Health',
+'Beauty',
+'Home Improvement',
+'Office',
+'Pets',
+'Shoes',
+'Sporting Goods',
+'Tech & Electronics']
 export enum BabiesKidsSubGroup {
     BABIES = 'Babies',
     KIDS = 'Kids'

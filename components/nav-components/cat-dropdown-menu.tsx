@@ -18,16 +18,11 @@ export const CatDropdownMenu = ({
   };
   return (
     <div className=" relative overflow-visible">
-      <div
-        className={cn(
-          "flex item-center px-2 rounded-2xl",
-          isOpen ? "bg-blue-50" : ""
-        )}
-      >
+      <div className="flex item-center">
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 self-center" />
+          <ChevronUp className="w-5 h-5 p-0 self-center bg-accent rounded-sm" />
         ) : (
-          <ChevronDown className="w-5 h-5 self-center" />
+          <ChevronDown className="w-5 h-5 p-0 self-center bg-accent rounded-sm" />
         )}
         <Button
           variant="secondary"
@@ -43,7 +38,7 @@ export const CatDropdownMenu = ({
           "absolute z-20 -left-6 grid gap-8 mt-1\
           md:w-[600px] lg:w-[800px] grid-cols-[1fr_1fr_1fr_1fr] \
           lg:grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] \
-           p-6 shadow-sm border-2  rounded-lg",
+           p-6 shadow-sm border-2  rounded-lg bg-secondary",
           isOpen ? "" : "hidden"
         )}
       >
@@ -51,10 +46,10 @@ export const CatDropdownMenu = ({
           <div
             key={index}
             className="flex justify-center items-center \
-            p-4 rounded-lg bg-blue-50"
+            p-4 rounded-lg bg-card"
           >
             <Link href={item.href}>
-              <span className="text-blue-500">{item.title}</span>
+              <span className="text-foreground">{item.title}</span>
             </Link>
           </div>
         ))}
@@ -69,9 +64,3 @@ export const CatDropdownMenu = ({
     </div>
   );
 };
-
-/*const catIcons = (title: CategoryGroup) => {
-  return (
-    <>{title == CategoryGroup.AUTO ? <Car className="w-6 h-6" /> : <></>}</>
-  );
-};*/
